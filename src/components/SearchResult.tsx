@@ -21,7 +21,7 @@ export const SearchResult: React.FC<{ results: iTunesResult[] }> = ({
   return (
     <Grid container marginTop={5}>
       {results.map((result, index) => (
-        <Grid xs={12}>
+        <Grid item key={result.trackId} xs={12}>
           <Item>
             <img src={result.artworkUrl100} alt={result.trackName} />
             <p>Track Name: {result.trackName}</p>
