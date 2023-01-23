@@ -11,3 +11,9 @@ and then run the React app in a different terminal
 ## Design Decisions
 
 Project is mainly using react hooks which handles all the interaction with the backend. As the app is relatively small hooks is sufficient in this case. Alternatively we can also add Redux and Redux Saga but with the tradeoff of much higher boilerplate code.
+
+## Known issues
+
+1. Need to do better error handling in the hook
+2. Need to add test for the SearchPage
+3. The useITunesSearch should also return a loading state
