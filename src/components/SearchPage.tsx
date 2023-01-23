@@ -50,7 +50,7 @@ function SearchPage() {
         hasMore={hasMore}
         loader={<h4>Loading...</h4>}
       >
-        <SearchResult results={results} />
+        {searchTerm && <SearchResult results={results} />}
       </InfiniteScroll>
     </Box>
   );
